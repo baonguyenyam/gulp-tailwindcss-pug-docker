@@ -1,0 +1,17 @@
+extends ../_layout/master.pug
+block head
+    - var title = 'Home'
+block content
+    section.home-page.main-wrapper
+        .wrapper-inner
+            #map(style='height: 400px;')
+            button.fancybox(data-fancybox data-src="#dialog-content") This is a paragraph.
+            #dialog-content(style='max-width: 500px; display: none;')
+                h2.mb-4.text-xl.text-slate-900.font-semibold Hello, world!
+                p.mb-4
+                    input.bg-gray-50.border-2.border-gray-300.text-gray-900.text-sm.rounded-lg.block.w-full(type='text' class='focus:ring-gray-900 focus:border-gray-900 p-2.5')
+                p.mb-4
+                    | Try hitting the tab key and notice how the focus stays within the dialog itself.
+                p.mb-4
+                    | To close dialog hit the esc button, click on the overlay or just click the close button.
+                p  Element used to launch the modal would receive focus back after closing. 

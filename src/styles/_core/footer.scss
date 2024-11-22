@@ -1,0 +1,25 @@
+/* FOOTER */
+#mainfooter {
+    @apply relative px-4 sm:px-10;
+    .footer_wrapper {
+        @apply xl:max-w-7xl mx-auto;
+        .footer_main_content {
+            @apply gap-4 gap-y-8 grid grid-cols-12 py-8 items-center md:py-12 sm:gap-8
+        }
+        .footer_bottom_content {
+            @apply py-6 md:items-center md:flex md:justify-between md:py-8;
+            .footer_social {
+                @apply flex -ml-2 mb-4 md:mb-0 md:ml-4 md:order-1 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4 rtl:ml-0 list-none;
+                a {
+                    @apply items-center inline-flex rounded-lg text-sm focus:outline-none focus:ring-4 p-2.5;
+                }
+            }
+            .footer_copy {
+                @apply mr-4 text-sm;
+                a {
+                    @apply underline
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+/* MAIN WRAPPER */
+.main-wrapper {
+    @apply w-full;
+    .wrapper-inner {
+        @apply xl:max-w-7xl mx-auto;
+        .wrapper-inner-content {
+            @apply px-4 sm:px-10;
+        }
+    }
+}

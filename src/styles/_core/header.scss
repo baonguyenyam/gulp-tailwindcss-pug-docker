@@ -1,0 +1,58 @@
+/* HEADER */
+#mainheader {
+    @apply flex shadow-md py-4 px-4 tracking-wide relative z-50 sm:px-10 min-h-[70px];
+    .header_wrapper {
+        @apply flex flex-nowrap items-center justify-between gap-5 w-full xl:max-w-7xl xl:px-0 mx-auto;
+        #header_collapseMenu {
+            @apply max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50;
+            .menu_wrapper {
+                @apply z-50 max-lg:space-y-3 max-lg:fixed max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto relative;
+                #header_menu {
+                    @apply gap-x-5 lg:flex list-none m-0;
+                    #header_menu_logo {
+                        @apply mb-6 hidden max-lg:block;
+                    }
+                    .header_menu_item {
+                        @apply border-gray-300 px-3 max-lg:border-b max-lg:py-3;
+                        a {
+                            @apply block font-semibold text-[15px] no-underline;
+                            &:hover, 
+                            &.active {
+                                color: var(--a-active);
+                                @apply transition-all ease-in-out duration-300 underline;
+                            }
+                        }
+                    }
+                }
+                
+                #header_toggleClose {
+                    @apply absolute hidden z-[100000] w-12 h-12 right-0 top-0 m-0;
+                    &.active {
+                        @apply flex items-center justify-center;
+                    }
+                }
+            }
+            &.active {
+                @apply max-lg:block max-lg:before:opacity-50 max-lg:before:bg-black;
+                .menu_wrapper{
+                    @apply z-[10000];
+                    background-color: var(--a-white);
+                    #header_menu {
+                        .header_menu_item{
+                            @apply max-lg:px-0;
+                        }
+                    }
+                }
+            }
+        }
+        #header_toggleOpen {
+            @apply lg:hidden;
+        }
+        .header_btn-group {
+            @apply flex space-x-3 max-lg:ml-auto;
+            .header_cta-button {
+                @apply  px-4 py-2 text-sm rounded-full font-bold border-2 transition-all ease-in-out duration-300;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/* ROOT: */
+:root {
+    --a-white: #FFFFFF;
+    --a-gray: #DFDFDF;
+    --a-link: #333333;
+    --a-active: #3366ff;
+}
+
+/* BASE */
+html, body {
+    @apply min-h-screen;
+    @apply justify-between;
+    @apply flex flex-col;
+
+    a {
+        text-decoration: underline;
+        color: var(--a-link);
+        &:hover {
+            color: var(--a-active);
+        }
+    }
+
+    > footer {
+        @apply mt-auto;
+    }
+}
+
+/* Typography */
+h1 {
+    @apply text-2xl font-bold xl:text-3xl 2xl:text-4xl mb-4;
+}
+h2 {
+    @apply text-xl font-bold xl:text-2xl 2xl:text-3xl mb-4;
+}
+h3 {
+    @apply text-lg font-bold xl:text-xl 2xl:text-2xl mb-4;
+}
+h4 {
+    @apply text-base font-bold xl:text-lg 2xl:text-xl mb-4;
+}
+p {
+    @apply text-base xl:text-lg 2xl:text-xl mb-4;
+}
+
+ul {
+    @apply list-disc ml-4 mb-4;
+}
+
+ol {
+    @apply list-decimal ml-5 mb-4;
+}
+
+table {
+    @apply w-full border-collapse mb-4;
+    th, td {
+        @apply border border-gray-300;
+        padding: 0.5rem;
+    }
+}
+
+.table-wrapper {
+    @apply overflow-x-auto;
+}
+
+blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic mb-4;
+}

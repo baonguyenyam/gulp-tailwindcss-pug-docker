@@ -1,0 +1,12 @@
+@use "tailwind.css";
+
+// CORE 
+@use "_core/base.scss";
+@use "_core/header.scss";
+@use "_core/footer.scss";
+@use "_core/main.scss";
+
+// LAYOUT 
+@use "_layout/swiper.scss";
+@use "_layout/form.scss";
+@use "_layout/responsive.scss";

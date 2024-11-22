@@ -1,0 +1,26 @@
+extends ../_layout/master.pug
+block head
+    - var title = 'Home'
+block content
+    section.home-page.main-wrapper
+        .wrapper-inner
+            // Swiper
+            .swiper.homeSwiper
+                .swiper-wrapper(class="min-h-[300px]")
+                    .swiper-slide Slide 1
+                    .swiper-slide Slide 2
+                    .swiper-slide Slide 3
+                    .swiper-slide Slide 4
+                    .swiper-slide Slide 5
+                    .swiper-slide Slide 6
+                    .swiper-slide Slide 7
+                    .swiper-slide Slide 8
+                    .swiper-slide Slide 9
+                .swiper-pagination
+                .swiper-button-next
+                .swiper-button-prev
+                .autoplay-progress
+                    svg(viewbox='0 0 48 48')
+                        circle(cx='24' cy='24' r='20')
+                    span
+    
