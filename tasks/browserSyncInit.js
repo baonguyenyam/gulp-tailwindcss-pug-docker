@@ -16,4 +16,4 @@ function browserSyncInit() {
 	gulpWatch();
 }
 
-module.exports = browserSyncInit;
+module.exports = browserSyncInit

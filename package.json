@@ -2,7 +2,6 @@
   "name": "gulp-tailwindcss-pug-docker",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "index.js",
   "author": {
     "name": "Nguyen Pham",
     "email": "baonguyenyam@gmail.com",
@@ -10,7 +9,6 @@
   },
   "private": true,
   "scripts": {
-    "start": "node index.js",
     "dev": "gulp",
     "build": "gulp build"
   },
@@ -21,7 +19,6 @@
     "autoprefixer": "^10.4.20",
     "browser-sync": "^3.0.3",
     "cssnano": "^7.0.6",
-    "express": "^4.21.2",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -35,6 +32,7 @@
     "gulp-postcss": "^10.0.0",
     "gulp-prettier": "^6.0.0",
     "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-sass": "^6.0.0",
     "gulp-sourcemaps": "^3.0.0",
@@ -47,6 +45,5 @@
     "sass": "^1.85.1",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.0.9"
-  },
-  "packageManager": "yarn@4.0.0"
+  }
 }

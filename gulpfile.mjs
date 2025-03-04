@@ -13,12 +13,16 @@ import copyCSS from './tasks/copyCSS.js';
 import copyJS from './tasks/copyJS.js';
 import copyImages from './tasks/copyImages.js';
 import pugCompile from './tasks/pugCompile.js';
+import htmlCompile from './tasks/htmlCompile.js';
 import sassCompileProduct from './tasks/sassCompileProduct.js';
 import compressCSS from './tasks/compressCSS.js';
 import compressJS from './tasks/compressJS.js';
 import formatHtmlSiteApp from './tasks/formatHtmlSiteApp.js';
 import cleanCSS from './tasks/cleanCSS.js';
 import copyData from './tasks/copyData.js';
+import htmlReplace from './tasks/htmlReplace.js';
+
+const template_config = 'html'
 
 export const basic = gulp.series(
     cleanDist,
@@ -26,7 +30,8 @@ export const basic = gulp.series(
     copyImages,
     copyJS,
     copyData,
-    pugCompile,
+    template_config === 'pug' ? pugCompile : htmlCompile,
+    template_config === 'html' ? htmlReplace : (done) => done(),
 );
 
 export default gulp.series(
