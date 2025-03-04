@@ -1,6 +1,7 @@
 // GULP FILE by Nguyen Pham
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
+import dotenv from 'dotenv';
 browserSync.create();
 
 // Tasks
@@ -22,7 +23,7 @@ import cleanCSS from './tasks/cleanCSS.js';
 import copyData from './tasks/copyData.js';
 import htmlReplace from './tasks/htmlReplace.js';
 
-const template_config = 'html'
+const template_config = dotenv.config().parsed;
 
 export const basic = gulp.series(
     cleanDist,
@@ -30,8 +31,8 @@ export const basic = gulp.series(
     copyImages,
     copyJS,
     copyData,
-    template_config === 'pug' ? pugCompile : htmlCompile,
-    template_config === 'html' ? htmlReplace : (done) => done(),
+    template_config.TEMPLATE_COMPILE === 'pug' ? pugCompile : htmlCompile,
+    template_config.TEMPLATE_COMPILE === 'html' ? htmlReplace : (done) => done(),
 );
 
 export default gulp.series(
