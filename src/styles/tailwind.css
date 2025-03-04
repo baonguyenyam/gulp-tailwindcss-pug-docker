@@ -1,98 +1,94 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --aspect-*: initial;
-  --aspect-1: 1;
-  --aspect-2: 2;
-  --aspect-3: 3;
-  --aspect-4: 4;
-  --aspect-5: 5;
-  --aspect-6: 6;
-  --aspect-7: 7;
-  --aspect-8: 8;
-  --aspect-9: 9;
-  --aspect-10: 10;
-  --aspect-11: 11;
-  --aspect-12: 12;
-  --aspect-13: 13;
-  --aspect-14: 14;
-  --aspect-15: 15;
-  --aspect-16: 16;
-  --aspect-auto: auto;
-  --aspect-square: 1 / 1;
-  --aspect-video: 16 / 9;
+	--aspect-1: 1;
+	--aspect-2: 2;
+	--aspect-3: 3;
+	--aspect-4: 4;
+	--aspect-5: 5;
+	--aspect-6: 6;
+	--aspect-7: 7;
+	--aspect-8: 8;
+	--aspect-9: 9;
+	--aspect-10: 10;
+	--aspect-11: 11;
+	--aspect-12: 12;
+	--aspect-13: 13;
+	--aspect-14: 14;
+	--aspect-15: 15;
+	--aspect-16: 16;
+	--aspect-auto: auto;
+	--aspect-square: 1 / 1;
+	--aspect-video: 16 / 9;
 
-  --breakpoint-*: initial;
-  --breakpoint-xs: 480px;
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-2xl: 1366px;
-  --breakpoint-3xl: 1440px;
-  --breakpoint-4xl: 1536px;
-  --breakpoint-5xl: 1600px;
-  --breakpoint-6xl: 1700px;
-  --breakpoint-7xl: 1800px;
-  --breakpoint-8xl: 1900px;
-  --breakpoint-9xl: 2000px;
-  --breakpoint-10xl: 2100px;
-  --breakpoint-11xl: 2200px;
-  --breakpoint-12xl: 2300px;
-  --breakpoint-13xl: 2400px;
-  --breakpoint-14xl: 2500px;
-  --breakpoint-15xl: 2600px;
-  --breakpoint-16xl: 2700px;
-  --breakpoint-17xl: 2800px;
-  --breakpoint-18xl: 2900px;
+	--breakpoint-xs: 480px;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	--breakpoint-2xl: 1366px;
+	--breakpoint-3xl: 1440px;
+	--breakpoint-4xl: 1536px;
+	--breakpoint-5xl: 1600px;
+	--breakpoint-6xl: 1700px;
+	--breakpoint-7xl: 1800px;
+	--breakpoint-8xl: 1900px;
+	--breakpoint-9xl: 2000px;
+	--breakpoint-10xl: 2100px;
+	--breakpoint-11xl: 2200px;
+	--breakpoint-12xl: 2300px;
+	--breakpoint-13xl: 2400px;
+	--breakpoint-14xl: 2500px;
+	--breakpoint-15xl: 2600px;
+	--breakpoint-16xl: 2700px;
+	--breakpoint-17xl: 2800px;
+	--breakpoint-18xl: 2900px;
 
-  --text-*: initial;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-md: 1rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
-  --text-6xl: 4rem;
-  --text-7xl: 5rem;
-  --text-8xl: 6rem;
-  --text-9xl: 7rem;
-  --text-10xl: 8rem;
-  --text-11xl: 9rem;
-  --text-12xl: 10rem;
-  --text-13xl: 11rem;
-  --text-14xl: 12rem;
-  --text-15xl: 13rem;
-  --text-16xl: 14rem;
-  --text-17xl: 15rem;
-  --text-18xl: 16rem;
-  --text-19xl: 17rem;
-  --text-20xl: 18rem;
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-md: 1rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 4rem;
+	--text-7xl: 5rem;
+	--text-8xl: 6rem;
+	--text-9xl: 7rem;
+	--text-10xl: 8rem;
+	--text-11xl: 9rem;
+	--text-12xl: 10rem;
+	--text-13xl: 11rem;
+	--text-14xl: 12rem;
+	--text-15xl: 13rem;
+	--text-16xl: 14rem;
+	--text-17xl: 15rem;
+	--text-18xl: 16rem;
+	--text-19xl: 17rem;
+	--text-20xl: 18rem;
 
-  --container-*: initial;
-  --container-xs: 30rem;
-  --container-sm: 35rem;
-  --container-md: 40rem;
-  --container-lg: 45rem;
-  --container-xl: 50rem;
-  --container-2xl: 55rem;
-  --container-3xl: 60rem;
-  --container-4xl: 65rem;
-  --container-5xl: 70rem;
-  --container-6xl: 75rem;
-  --container-7xl: 80rem;
-  --container-8xl: 90rem;
-  --container-9xl: 95rem;
-  --container-10xl: 100rem;
-  --container-11xl: 110rem;
-  --container-12xl: 120rem;
-  --container-13xl: 130rem;
-  --container-14xl: 140rem;
-  --container-15xl: 150rem;
+	--container-xs: 30rem;
+	--container-sm: 35rem;
+	--container-md: 40rem;
+	--container-lg: 45rem;
+	--container-xl: 50rem;
+	--container-2xl: 55rem;
+	--container-3xl: 60rem;
+	--container-4xl: 65rem;
+	--container-5xl: 70rem;
+	--container-6xl: 75rem;
+	--container-7xl: 80rem;
+	--container-8xl: 90rem;
+	--container-9xl: 95rem;
+	--container-10xl: 100rem;
+	--container-11xl: 110rem;
+	--container-12xl: 120rem;
+	--container-13xl: 130rem;
+	--container-14xl: 140rem;
+	--container-15xl: 150rem;
 }
 
 /*
@@ -104,11 +100,11 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }

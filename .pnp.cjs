@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/core", "npm:7.26.9"],\
           ["@babel/preset-env", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:7.26.9"],\
           ["@tailwindcss/postcss", "npm:4.0.9"],\
+          ["autoprefixer", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:10.4.20"],\
           ["browser-sync", "npm:3.0.3"],\
           ["cssnano", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:7.0.6"],\
           ["express", "npm:4.21.2"],\
@@ -3096,6 +3097,34 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["autoprefixer", [\
+      ["npm:10.4.20", {\
+        "packageLocation": "../../../.yarn/berry/cache/autoprefixer-npm-10.4.20-dd5fd05d27-10c0.zip/node_modules/autoprefixer/",\
+        "packageDependencies": [\
+          ["autoprefixer", "npm:10.4.20"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:10.4.20", {\
+        "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-1574355f5b/4/.yarn/berry/cache/autoprefixer-npm-10.4.20-dd5fd05d27-10c0.zip/node_modules/autoprefixer/",\
+        "packageDependencies": [\
+          ["autoprefixer", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:10.4.20"],\
+          ["@types/postcss", null],\
+          ["browserslist", "npm:4.24.4"],\
+          ["caniuse-lite", "npm:1.0.30001702"],\
+          ["fraction.js", "npm:4.3.7"],\
+          ["normalize-range", "npm:0.1.2"],\
+          ["picocolors", "npm:1.1.1"],\
+          ["postcss", "npm:8.5.3"],\
+          ["postcss-value-parser", "npm:4.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/postcss",\
+          "postcss"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["b4a", [\
       ["npm:1.6.7", {\
         "packageLocation": "../../../.yarn/berry/cache/b4a-npm-1.6.7-a52d28b4e2-10c0.zip/node_modules/b4a/",\
@@ -5070,6 +5099,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["fraction.js", [\
+      ["npm:4.3.7", {\
+        "packageLocation": "../../../.yarn/berry/cache/fraction.js-npm-4.3.7-c2c7e95a8e-10c0.zip/node_modules/fraction.js/",\
+        "packageDependencies": [\
+          ["fraction.js", "npm:4.3.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["fresh", [\
       ["npm:0.5.2", {\
         "packageLocation": "../../../.yarn/berry/cache/fresh-npm-0.5.2-ad2bb4c0a2-10c0.zip/node_modules/fresh/",\
@@ -5649,6 +5687,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/core", "npm:7.26.9"],\
           ["@babel/preset-env", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:7.26.9"],\
           ["@tailwindcss/postcss", "npm:4.0.9"],\
+          ["autoprefixer", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:10.4.20"],\
           ["browser-sync", "npm:3.0.3"],\
           ["cssnano", "virtual:6beb1ba036059250601fc3c8239e4e5ddf278019dc2bc16ad34dfe8318b3427deb95f07b37fd96e495c2a300b4669fd099788673ed71ed3b26ac1065414a6907#npm:7.0.6"],\
           ["express", "npm:4.21.2"],\
@@ -7222,6 +7261,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/normalize-path-npm-3.0.0-658ba7d77f-10c0.zip/node_modules/normalize-path/",\
         "packageDependencies": [\
           ["normalize-path", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["normalize-range", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/normalize-range-npm-0.1.2-bec5e259e2-10c0.zip/node_modules/normalize-range/",\
+        "packageDependencies": [\
+          ["normalize-range", "npm:0.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
