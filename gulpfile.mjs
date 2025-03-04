@@ -17,29 +17,31 @@ import sassCompileProduct from './tasks/sassCompileProduct.js';
 import compressCSS from './tasks/compressCSS.js';
 import compressJS from './tasks/compressJS.js';
 import formatHtmlSiteApp from './tasks/formatHtmlSiteApp.js';
-// import htmlValidate from './tasks/htmlValidate.mjs';
+import cleanCSS from './tasks/cleanCSS.js';
+import copyData from './tasks/copyData.js';
 
-export default gulp.series(
+export const basic = gulp.series(
     cleanDist,
-    babelCompile,
-    pugCompile,
     copyCSS,
     copyImages,
     copyJS,
+    copyData,
+    pugCompile,
+);
+
+export default gulp.series(
+    basic,
+    babelCompile,
     sassCompile,
     browserSyncInit,
 );
 
 export const build = gulp.series(
-    cleanDist,
+    basic,
     babelCompilePro,
-    pugCompile,
-    copyCSS,
-    copyImages,
-    copyJS,
     sassCompileProduct,
     compressCSS,
     compressJS,
+    cleanCSS,
     formatHtmlSiteApp,
-    // htmlValidate
 );

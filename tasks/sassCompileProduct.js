@@ -8,7 +8,7 @@ const sass = gulpSass(dartSass)
 function sassCompileProduct() {
 	return gulp.src("./src/styles/*.scss")
 		.pipe(sass({
-			outputStyle: 'compressed',
+			style: 'compressed',
 			silenceDeprecations: ['legacy-js-api']
 		}).on('error', sass.logError))
 		.pipe(postcss())

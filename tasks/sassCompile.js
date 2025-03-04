@@ -10,7 +10,7 @@ function sassCompile() {
 	return gulp.src("./src/styles/*.scss")
 		.pipe(sourcemaps.init())
 		.pipe(sass({
-			outputStyle: 'expanded',
+			// style: 'compressed',
 			silenceDeprecations: ['legacy-js-api']
 		}).on('error', sass.logError))
 		.pipe(postcss())
