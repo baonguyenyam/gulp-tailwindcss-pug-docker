@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
+    "@tailwindcss/postcss": "^4.0.9",
     "autoprefixer": "^10.4.20",
     "browser-sync": "^3.0.3",
     "cssnano": "^7.0.6",
@@ -45,7 +46,7 @@
     "run-sequence": "^2.2.1",
     "sass": "^1.85.1",
     "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.15"
+    "tailwindcss": "^3.4.17"
   },
   "packageManager": "yarn@4.0.0"
 }
